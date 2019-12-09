@@ -1,5 +1,6 @@
 package com.lara.cuatroproyecto
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_act__busqueda.*
@@ -38,12 +39,14 @@ class Act_Busqueda : AppCompatActivity() {
 
         if (fecha == fechaCorrecta) {
             toast("RESPUESTA CORRECTA")
-
+            setResult(Activity.RESULT_OK)
 
         } else {
             toast("INTENTALO DE NUEVO")
 
         }
+
+        //setResult(Activity.RESULT_OK)
 
     }
 
