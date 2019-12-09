@@ -42,7 +42,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txt_fecha"
         android:layout_width="155dp"
         android:layout_height="43dp"
         android:layout_marginTop="40dp"
@@ -55,14 +55,14 @@
         android:autofillHints="" />
 
     <Button
-        android:id="@+id/btn_ok"
+        android:id="@+id/btn_comprobar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@android:string/ok"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintStart_toEndOf="@+id/txt_fecha"
         app:layout_constraintTop_toBottomOf="@+id/txt_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
