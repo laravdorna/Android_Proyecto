@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">cuatroProyecto</string>
+    <string name="cuatro_juegos">cuatro juegos</string>
+    <string name="captura">Captura</string>
+    <string name="busqueda">Busqueda</string>
+    <string name="button">Button</string>
+    <string name="operaci_n">OPERACIÓN</string>
+</resources>
