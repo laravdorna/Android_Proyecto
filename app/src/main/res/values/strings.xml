@@ -6,4 +6,7 @@
     <string name="button">Button</string>
     <string name="operaci_n">OPERACIÓN</string>
     <string name="title_activity_act__busqueda">Act_Busqueda</string>
+    <string name="acierta_la_respuesta">¿Acierta la respuesta?</string>
+    <string name="pista">PISTA</string>
+    <string name="en_que_a_o_se_cre_el_ordenador_personal">¿En que año se creó el ordenador personal?</string>
 </resources>
