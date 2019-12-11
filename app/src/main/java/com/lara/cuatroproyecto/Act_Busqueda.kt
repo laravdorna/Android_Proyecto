@@ -31,22 +31,24 @@ class Act_Busqueda : AppCompatActivity() {
     //funcion que comprueba que la fecha sea la correcta
     fun comprobar() {
 
-        val fechaCorrecta = 1964
+        val fechaCorrecta = "1964"
         //meter la fecha dada en un int
-        val fecha = Integer.parseInt(txt_fecha.toString())
+        val fecha = txt_fecha.text.toString()
 
 
-
+        //comprobar si la respuesta es igual o no a la correcta
         if (fecha == fechaCorrecta) {
             toast("RESPUESTA CORRECTA")
+            //que mande un result_ok para recogerlo en el main
             setResult(Activity.RESULT_OK)
-
+            //cerrar la activity
+            finish()
         } else {
             toast("INTENTALO DE NUEVO")
 
         }
 
-        //setResult(Activity.RESULT_OK)
+
 
     }
 
