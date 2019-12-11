@@ -12,7 +12,7 @@ import java.util.jar.Pack200
 
 
 const val BUSQUEDA_REQUEST=1
-
+const val CAPTURA_REQUEST=2
 class MainActivity : AppCompatActivity() {
 
 
@@ -40,13 +40,20 @@ class MainActivity : AppCompatActivity() {
     fun seleccionar(v: View) {
         val botonAux = v as Button
 
-
         if (botonAux == btn_busqueda) {
             val miIntent = Intent(this, Act_Busqueda::class.java)
-            
+
             startActivityForResult(miIntent, BUSQUEDA_REQUEST)
+        }else if(botonAux==btn_captura){
+            val miIntent = Intent(this, Act_Busqueda::class.java)
+
+            startActivityForResult(miIntent, CAPTURA_REQUEST)
+
         }
+
     }
+
+
 
     //en esta funcion se pueden ir recogiendo las diferentes activity results de cada activity
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -60,5 +67,8 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+
     }
+
 }
